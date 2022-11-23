@@ -4,17 +4,16 @@ public class Gara {
     
     private String data;
     private String oraInizio;
-    private Pista pisteDisponibili[];
-    private Atleta atleti[];
+    private Pista pisteDisponibili[] = new Pista[10];
+    private Atleta atleti[] = new Atleta[6];
 
+    
     public Gara() {
     }
-
-    public Gara(String data, String oraInizio, Pista[] pisteDisponibili, Atleta[] atleti) {
+    
+    public Gara(String data, String oraInizio) {
         this.data = data;
         this.oraInizio = oraInizio;
-        this.pisteDisponibili = pisteDisponibili;
-        this.atleti = atleti;
     }
 
     public String getData() {
@@ -49,9 +48,6 @@ public class Gara {
         this.atleti = atleti;
     }
 
-    @Override
-    public String toString() {
-        return "Gara{" + "data=" + data + ", oraInizio=" + oraInizio + ", pisteDisponibili=" + pisteDisponibili + ", atleti=" + atleti + '}';
-    }
+    
     
 }
